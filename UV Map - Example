@@ -1,76 +1,8 @@
 Reformat {
- name Reformat1
- selected true
- xpos -480
- ypos -562
-}
-Dot {
- name Dot3
- note_font_size 35
- note_font_color 0xffffff
- selected true
- xpos -446
- ypos -462
-}
-set N821d8800 [stack 0]
-Dot {
- name Dot1
- note_font_size 35
- note_font_color 0xffffff
- selected true
- xpos -336
- ypos -462
-}
-Ramp {
- output {-rgba.red rgba.green -rgba.blue}
- p0 {0 0}
- p1 {0 {height}}
- name Ramp2
- selected true
- xpos -370
- ypos -400
-}
-push $N821d8800
-Dot {
- name Dot2
- note_font_size 35
- note_font_color 0xffffff
- selected true
- xpos -556
- ypos -462
-}
-Ramp {
- output {rgba.red -rgba.green -rgba.blue}
- p0 {0 0}
- p1 {{width} 0}
- name Ramp1
- selected true
- xpos -590
- ypos -400
-}
-Merge2 {
- inputs 2
- operation plus
- name Plus
- label "mix: \[value mix] (\[value bbox])"
- selected true
- xpos -480
- ypos -280
-}
-Shuffle {
- blue white
- name Shuffle1
- label "<b>\[value in]</b> &rarr; \[value out]"
- selected true
- xpos -480
- ypos -188
-}
-Reformat {
- inputs 0
  name Reformat2
  selected true
  xpos -810
- ypos -562
+ ypos -466
 }
 Expression {
  expr0 "(x+0.5) / width"
@@ -88,5 +20,5 @@ Shuffle {
  label "<b>\[value in]</b> &rarr; \[value out]"
  selected true
  xpos -810
- ypos -164
+ ypos -308
 }
